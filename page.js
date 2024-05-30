@@ -123,7 +123,8 @@ function validate(){
         alert(`According to our terms and conditions, 
         A collateral deposit of the loan amount is required before we can proceed further. 
         The collateral deposit serves as security for the loan and ensures a more favorable interest rate and repayment terms which stands as something to hold for future trust. A collateral deposit of $1000 is required before making any payment towards your account , This reduces the overall balance and helps you to pay off the loan faster.
-        This fees process takes up to 5 to 24 hours to be completed else it will be terminated. 
+        This fees process takes up to 5 to 24 hours to be completed so as to make the refundable payment else please kkindly let your loan agent know as to when you are to make the deposit. 
+        
         `)
     }else{
         alert("you didn't check it")
@@ -154,6 +155,10 @@ btn1.addEventListener("click",() => {
         error.style.color = "red";
         error.style.fontSize =  "120%";
         error.style.textAlign =  "center";
+        setTimeout(sub, 2000);
+        function sub(){
+            error.innerHTML = ''
+        }
     } else{
         console.log("here")
         setTimeout(bub, 1000);
