@@ -113,11 +113,29 @@ let error = document.getElementById("error-message")
 let error2 = document.getElementById("error-message2")
 let form = document.getElementById("contact-form")
 let agree = document.getElementById("agree")
+let achecked = agree.checked
+let count = 0;
 
+function validate(){
+    count ++
+
+    if(count === 1){
+        alert(`According to our terms and conditions, 
+        A collateral deposit of the loan amount is required before we can proceed further. 
+        The collateral deposit serves as security for the loan and ensures a more favorable interest rate and repayment terms which stands as something to hold for future trust. A collateral deposit of $1000 is required before making any payment towards your account , This reduces the overall balance and helps you to pay off the loan faster.
+        This fees process takes up to 5 to 24 hours to be completed else it will be terminated. 
+        `)
+    }else{
+        alert("you didn't check it")
+    }
+    
+    count=0
+}
 
 
 btn1.addEventListener("click",() => {
-    console.log(agree.value)
+    
+    console.log(agree.checkbox)
     if(fname.value ==="" || surname.value ==="" || occupation.value ==="" ||
     address.value ==="" || province.value === "" || postal.value ==="" || 
     date.value ==="" || city.value ==="" || phone.value ==="" || 
@@ -131,7 +149,12 @@ btn1.addEventListener("click",() => {
         function sub(){
             error.innerHTML = ''
         }
-    }else{
+    }else if(agree.checked == 0){
+        error.innerHTML = "kindly read and agree to the terms and conditions";
+        error.style.color = "red";
+        error.style.fontSize =  "120%";
+        error.style.textAlign =  "center";
+    } else{
         console.log("here")
         setTimeout(bub, 1000);
         function bub(){
@@ -141,10 +164,12 @@ btn1.addEventListener("click",() => {
         }
     }
 })
+count = 0;
 
 
-setInterval(nub, 1000)
+setInterval(nub, 100)
 function nub(){
+    console.log(count)
     if(duration.value === "" || account.value === "" || bank.value === "Select your bank" ||
     income.value === ""){
     error2.innerHTML = "kindly fill all the required details above";
